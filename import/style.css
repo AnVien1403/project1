@@ -1,0 +1,38 @@
+@import url(http://font.googleapis.css?family=monsterrat:500);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #f3f4f6;   
+}
+li,a{
+    font-family: "monterrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+ul{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px 10%;
+box-sizing:border-box ;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+li a{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+li a :hover{
+    color: #0088a9;
+}
