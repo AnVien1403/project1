@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    </head>
+    <body ng-app="">
+       <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Bảo Hiểm Phương tiện</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="breadcrumb"ng-app="">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Bảo hiểm phương tiện</a></li>
+    <li class="breadcrumb-item"><a href="/planmoto.htm">Bảo hiểm xe máy</a></li>
+    <li class="breadcrumb-item active"><a href="/plancar.htm">Bảo hiểm ô tô </a></li>
+    <li class="breadcrumb-item active"><a href="/formpt.htm"> Đăng kí</a></li>
+  </ol>
+</nav>
+        <div id="#">
+            
+        </div>
+    <div ng-view></div>
+    <nav id="navbar-example3" class="navbar ">
+  <a class="navbar-brand" href="#PT">Bảo Hiểm Phương tiện</a>
+  <nav class="nav nav-pills flex-column">
+    <a class="nav-link" href="#item-1">1. Bảo hiểm Trách nhiệm dân sự Bắt buộc</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link ms-3 my-1" href="#item-1-1">a. Phạm vi bảo hiểm:</a>
+      <a class="nav-link ms-3 my-1" href="#item-1-2">b. Mức trách nhiệm bảo hiểm</a>
+    </nav>
+    <a class="nav-link" href="#item-2">2. Bảo hiểm tai nạn cho người ngồi trên xe</a>
+    <a class="nav-link" href="#item-3">3. Bảo hiểm vật chất xe ô tô</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link ms-3 my-1" href="#item-3-1">Phạm vi bảo hiểm:</a>
+    </nav>
+    <a class="nav-link" href="#item-4">4.Bảo hiểm trách nhiệm dân sự tự nguyện</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link ms-3 my-1" href="#item-4-1">a. Phạm vi bảo hiểm:</a>
+      <a class="nav-link ms-3 my-1" href="#item-4-2">b. Mức trách nhiệm bảo hiểm</a>
+    </nav>
+    <a class="nav-link" href="#item-5">5. Bảo hiểm trách nhiệm dân sự hàng hóa</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link ms-3 my-1" href="#item-5-1">a. Phạm vi bảo hiểm:</a>
+      <a class="nav-link ms-3 my-1" href="#item-5-2">b. Mức trách nhiệm bảo hiểm</a>
+    </nav>
+  </nav>
+</nav>
+
+<div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+  <h4 id="item-1">Item 1</h4>
+  <p>Theo Nghị định 103/2008/NĐ-CP, Bảo hiểm Trách nhiệm dân sự bắt buộc (TNDS) của chủ xe cơ giới 
+    là loại hình bảo hiểm bắt buộc mà các cá nhân hoặc doanh nghiệp sở hữu xe cơ giới phải mua theo 
+    luật định khi tham gia giao thông nhằm bảo vệ quyền lợi cho nạn nhân khi gặp tai nạn giao thông 
+    do xe cơ giới gây ra. Mặt khác, giúp bảo vệ tài chính cho chủ xe trước những rủi ro bất ngờ.</p>
+  <h5 id="item-1-1">a. Phạm vi bảo hiểm:</h5>
+  <ul>
+    <li>Thiệt hại ngoài hợp đồng về thân thể, tính mạng và tài sản đối với bên thứ ba do xe cơ giới gây ra;</li>
+    <li>Thiệt hại về thân thể và tính mạng của hành khách theo hợp đồng vận chuyển hành khách do xe cơ giới gây ra;</li>
+    <li>Chỉ áp dụng cho những tai nạn xe cơ giới xảy ra trong phạm vi lãnh thổ Việt Nam.</li>
+  </ul>
+  <h5 id="item-1-2">Mức trách nhiệm bảo hiểm:</h5>
+<ul>
+  <li>Đối với thiệt hại về người: 100 triệu đồng/1 người/1 vụ tai nạn;</li>
+  <li>Đối với thiệt hại về tài sản: 50 triệu đồng/1 vụ tai nạn.</li>
+  <i>Khách hàng có thể mua Bảo hiểm Trách nhiệm Dân sự (TNDS) bắt buộc của MSIG qua trang mua trực tuyến</i>
+</ul>
+  <h4 id="item-2">2. Bảo hiểm tai nạn cho người ngồi trên xe</h4>
+  <p>Đây là loại bảo hiểm tự nguyện dành cho lái xe, phụ xe và những người ngồi trên xe trong quá trình tham gia 
+    giao thông, khi lên xuống xe trong quá trình tham gia giao thông không may bị tai nạn.</p>
+    <p>MSIG hiện đang cung cấp 2 gói Bảo hiểm tai nạn cho người ngồi trên xe (Cơ bản và Nâng cao)
+       với quyền lợi bảo hiểm như sau:</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Quyền lợi bảo hiểm</th>
+        <th scope="col">Cơ bản</th>
+        <th scope="col">Nâng cao</th>
+        <th scope="col">Handle</th>      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Tử vong do tai nạn (trong khi di chuyển bằng xe máy/ô tô)</td>
+        <td>50,000,000 VND</td>
+        <td>100,000,000 VND</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Thương tật hoặc tàn tật vĩnh viễn (do tai nạn trong khi di chuyển bằng xe máy/ô tô)</td>
+        <td>50,000,000 VND</td>
+        <td>100,000,000 VND</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td >Chi phí y tế (do tai nạn trong khi di chuyển bằng xe máy/ô tô)</td>
+        <td>10,000,000 VND</td>
+        <td>20,000,000 VND</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="item-3">3. Bảo hiểm vật chất xe ô tô</h4>
+  <p>Đây là một loại hình bảo hiểm ô tô tự nguyện, còn gọi là bảo hiểm thân vỏ xe ô tô.</p>
+  <h5 id="item-3-1">Phạm vi bảo hiểm:</h5>
+  <p>Công ty bảo hiểm bồi thường cho chủ xe những thiệt hại vật chất xe xảy ra do những
+     tai nạn bất ngờ, ngoài sự kiểm soát của chủ xe trong những trường hợp:</p>
+  <ul>
+    <li>Đâm va, lật, đổ, rơi;</li>
+    <li>Hoả hoạn, cháy, nổ;</li>
+    <li>Những tai họa bất khả kháng do thiên nhiên;</li>
+    <li>Mất cắp, mất cướp toàn bộ xe;</li>
+    <li>Các rủi ro ngẫu nhiên khác</li>
+    <li>Thiệt hại về thân thể đối với lái xe và những người được chở trên xe</li>
+  </ul>
+  <h4 id="item-4"> Bảo hiểm trách nhiệm dân sự tự nguyện</h4>
+  <h5 id="item-4-1">a. Phạm vi bảo hiểm:</h5>
+ <ul>
+  <li>Thiệt hại ngoài hợp đồng về tính mạng, thân thể và tài sản đối với bên thứ ba do xe cơ giới gây ra;</li>
+  <li>Thiệt hại về tính mạng, thân thể của hành khách theo hợp đồng vận chuyển khách do xe cơ giới gây ra.</li>
+ </ul>
+  <h5 id="item-4-2">b. Quyền lợi bảo hiểm:</h5>
+<ul>
+  <p>Trong trường hợp tổn thất thuộc phạm vi Bảo hiểm Trách nhiệm dân sự Bắt buộc mà chủ xe bồi thường cho 
+    nạn nhân vượt quá mức trách nhiệm bảo hiểm ô tô bắt buộc, công ty bảo hiểm sẽ bồi thường phần số tiền 
+    vượt mức như sau:</p>
+    <li>Về người: Chủ xe được bồi hoàn cho phần chi phí thực tế nhằm khắc phục hậu quả đối với bên thứ 3 vượt 
+      quá mức trách nhiệm bảo hiểm bắt buộc TNDS của chủ xe cơ giới do Bộ Tài chính quy định trên cơ sở mức trách 
+      'nhiệm tự nguyện chủ xe tự nguyện tham gia;</li>
+    <li>Về tài sản: Sau khi bảo hiểm bắt buộc đã chi trả hết mức trách nhiệm, công ty bảo hiểm sẽ chi trả phần chênh 
+      lệch số tiền chủ xe đã bồi thường cho người thiệt hại dựa trên số tiền mà chủ xe đã tham gia bảo hiểm;</li>
+    <li>Trong mọi trường hợp, số tiền bảo hiểm không vượt quá mức giới hạn trách nhiệm chủ xe tham gia.</li>
+</ul>
+  <h4 id="item-5">5. Bảo hiểm trách nhiệm dân sự hàng hóa</h4>
+  <p>Là trách nhiệm dân sự của chủ xe đối với hàng hóa trong quá trình vận chuyển theo hợp đồng vận chuyển giữa chủ xe với chủ hàng.</p>
+  <h5 id="item-5-1">a. Phạm vi bảo hiểm:</h5>
+  <p>Những thiệt hại về hàng hóa do tai nạn mà nguyên nhân xác định do lỗi của chủ xe gây ra trong quá trình vận chuyển hàng hóa.</p>
+  <h5 id="item-5-2">b. Quyền lợi bảo hiểm:</h5>
+  <p>Những chi phí bồi thường thực tế cần thiết và hợp lý của chủ xe đối với hàng hóa của chủ hàng theo quy định của Bộ luật 
+    dân sự khi xe bị tai nạn và khi đó chủ xe phải bồi thường cho chủ hàng. Số tiền bồi thường bao gồm những mục sau:</p>
+    <ul>
+      <li>Chi phí ngăn ngừa giảm nhẹ tổn thất;</li>
+      <li>Chi phí bảo quản, xếp dỡ, lưu kho, lưu bãi hàng hoá do hậu quả của tai nạn;</li>
+      <li>Chi phí giám định tổn thất thuộc trách nhiệm của công ty bảo hiểm;</li>
+      <li>Giá trị hàng hoá bị tổn thất;</li>
+      <li>Tổng số các chi phí trên không vượt quá mức trách nhiệm bảo hiểm cho hàng hoá chuyên chở trên xe.</li>
+    </ul>
+</div>
+    <script>
+        
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+          $routeProvider
+          .when("/PT", {
+            templateUrl : "demo2.htm"
+          })
+          .when("/XM", {
+            templateUrl : "https://github.com/Hoanggvien123/project_HK1/blob/main/import/planmoto.htm"
+          })
+          .when("/OT", {
+            templateUrl : "https://github.com/Hoanggvien123/project_HK1/blob/main/import/plancar.htm"
+          })
+          .when("/DK", {
+            templateUrl : "https://github.com/Hoanggvien123/project_HK1/blob/main/import/formpt.htm"
+          });
+        });
+            </script>
+    </body>
+ 
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.form-bt{
+  margin: 10%;
+}
+</style>
+</head>
+<body ng-app="">
+    <div class="form-bt">
+      <h1>  Bồi thường Bảo hiểm</h1>
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="validationServerUsername" class="form-label">Họ và tên</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend3"><i class="fa-regular fa-user"></i></span>
+                  <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                  <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Vui lòng điền thông tin !
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationServer05" class="form-label">Căn Cước Công dân</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3"><i class="fa-regular fa-id-badge"></i></span>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Vui lòng điền thông tin !
+                    </div>
+                  </div>
+              </div>
+            <div class="col-md-4">
+              <label for="validationServerUsername" class="form-label">Email</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Vui lòng điền thông tin !
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-3">
+                <label for="validationServer05" class="form-label">Địa chỉ </label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3"><i class="fa-regular fa-id-badge"></i></span>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Vui lòng điền thông tin !
+                    </div>
+                  </div>
+              </div>
+            <div class="col-md-3">
+              <label for="validationServer04" class="form-label">Hình thức bảo hiểm</label>
+              <select ng-model="IP" class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <option value="MT">Bảo hiểm Mô tô </option>
+                <option value="OT">Bảo hiểm Ô Tô</option>
+                <option value="MC">Bảo hiểm xe móoc-rơ</option>
+              </select>
+              <div ng-switch="IP" >
+                <div ng-switch-when="MT">
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3"> Bảo hiểm trách nhiệm dân sự</label><br><br>
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3"> Bảo hiểm tai nạn</label><br><br>
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3"> Bảo hiểm cháy nổ</label><br><br>
+                  
+                  
+                </div>
+                <div ng-switch-when="OT">
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3"> Bảo hiểm trách nhiệm dân sự</label><br><br>
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3"> Bảo hiểm vật chất xe</label><br><br>
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3"> Bảo hiểm tai nạn lái xe và người trên xe</label><br><br>
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3"> Bảo hiểm vật chất xe ô tô</label><br><br>
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3"> Bảo hiểm trách nhiệm dân sự hàng hóa</label><br><br>
+                </div>
+                <div ng-switch-when="MC">
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3">BẢO HIỂM BẮT BUỘC TRÁCH NHIỆM DÂN SỰ CỦA CHỦ XE ĐỐI VỚI BÊN THỨ BA</label><br><br>
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3">BẢO HIỂM TỰ NGUYỆN LÁI/PHỤ XE:</label><br><br>
+                  <input type="checkbox" name="vehicle3" value="Boat" disabled checked>
+                  <label for="vehicle3">BẢO HIỂM VẬT CHẤT XE (HAY GỌI LÀ BẢO HIỂM 2 CHIỀU, BẢO HIỂM THÂN VỎ XE)</label><br><br>
+
+                </div>
+              </div>
+              <div id="validationServer04Feedback" class="invalid-feedback">
+                Vui lòng chọn thông tin !
+              </div>
+            </div>
+           
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  Agree to terms and conditions
+                </label>
+                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+    </div>
+
+</body>
+</html>
