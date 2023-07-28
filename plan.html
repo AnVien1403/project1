@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </head>
+  <body>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-companyA" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-companyB" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+      </li>
+   
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-companyA" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header">
+              <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                Bảo hiểm mô tô 
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+              <div class="card-body">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action">Bảo hiểm xe máy bắt buộc</a>
+                  <a href="#" class="list-group-item list-group-item-action">Bảo hiểm người ngồi trên xe máy</a>
+                  <a href="#" class="list-group-item list-group-item-action">Bảo hiểm vật chất xe máy</a>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- ô tô -->
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+            kế hoạch bảo hiểm ô tô 
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action">Bảo hiểm trách nhiệm dân sự tự nguyện</a>
+              <a href="#" class="list-group-item list-group-item-action">Bảo hiểm trách nhiệm dân sự bắt buộc</a>
+              <a href="#" class="list-group-item list-group-item-action">Bảo hiểm tai nạn cho người ngồi trên xe</a>
+              <a href="#" class="list-group-item list-group-item-action">Bảo hiểm vật chất xe ô tô</a>
+              <a href="#" class="list-group-item list-group-item-action"> Bảo hiểm trách nhiệm dân sự hàng hóa</a>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">Tư vấn</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="validationServer01" class="form-label">Họ và tên</label>
+                  <input type="text" class="form-control is-valid" id="validationServer01"  required>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationServer05" class="form-label">Số điện thoại</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationServer05" class="form-label">Email</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                </div>
+                
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Tư vấn</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel2"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Cám ơn bạn đã sử dụng !
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">trở về</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Tư vấn</a>
+      </div>
+      <div class="tab-pane fade" id="pills-companyB" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+              Bảo hiểm mô tô 
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Bảo hiểm xe máy bắt buộc</a>
+                <a href="#" class="list-group-item list-group-item-action">Bảo hiểm người ngồi trên xe máy</a>
+                <a href="#" class="list-group-item list-group-item-action">Bảo hiểm vật chất xe máy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ô tô -->
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+              kế hoạch bảo hiểm ô tô 
+            </a>
+          </div>
+          <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Bảo hiểm xe máy bắt buộc</a>
+                <a href="#" class="list-group-item list-group-item-action">Bảo hiểm người ngồi trên xe máy</a>
+                <a href="#" class="list-group-item list-group-item-action">Bảo hiểm vật chất xe máy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Tư vấn</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="row g-3">
+                  <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">Họ và tên</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01"  required>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationServer05" class="form-label">z</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationServer05" class="form-label">Email</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                  </div>
+                  
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Tư vấn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel2"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Cám ơn bạn đã sử dụng !
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">trở về</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Tư vấn</a>
+    </div>
+  
+
+  </div>
+  </body>
+</html>
