@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-Quiz1-tab" data-bs-toggle="pill" data-bs-target="#pills-Quiz1"
+                    type="button" role="tab" aria-controls="Quiz1" aria-selected="true">Bảo
+                    hiểm ô tô bắt buộc (TNDS)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Quiz2-tab" data-bs-toggle="pill" data-bs-target="#pills-Quiz2"
+                    type="button" role="tab" aria-controls="Quiz2" aria-selected="false">Bảo
+                    hiểm ô tô tự
+                    nguyện</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-Quiz3-tab" data-bs-toggle="pill" data-bs-target="#pills-Quiz3"
+                    type="button" role="tab" aria-controls="Quiz3" aria-selected="false">Câu
+                    hỏi chung</button>
+            </li>
+        </ul>
+    </div>
+    <!-- tab content -->
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade active" id="pills-Quiz1" role="tabpanel" aria-labelledby="pills-Quiz1tab">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                            <strong>Bảo hiểm ô tô bắt buộc bồi thường cho
+                                ai?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse " data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ul>
+                                <li>Bồi thường cho tài sản của nạn nhân (bên
+                                    thứ 3)
+                                    lên đến 100 triệu đồng/vụ do tai nạn gây
+                                    ra.</li>
+                                <li>Bồi thường chi phí y tế, tử vong cho nạn
+                                    nhân
+                                    (bên thứ 3) lên đến 150 triệu
+                                    đồng/người/vụ do
+                                    tai nạn gây ra.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                            <strong>Bảo hiểm ô tô bắt buộc có hiệu lực trong
+                                bao lâu?</strong>
+
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <p>Hiệu lực bảo hiểm: 01 năm kể từ ngày bắt đầu
+                                hiệu lực
+                                của đơn bảo hiểm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                            <strong>Sử dụng bảo hiểm ô tô bắt buộc (TNDS)
+                                như thế nào?</strong>
+
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>Bước 1: Kiểm tra tình hình – Gọi trợ
+                                    giúp, cấp
+                                    cứu và sơ cứu nạn nhân nếu cần thiết.</li>
+                                <li>Bước 2: Liên hệ công ty bảo hiểm – Gọi
+                                    hotline
+                                    của công ty để được hướng dẫn kịp thời.</li>
+                                <li>Bước 3: Hoàn thiện hồ sơ – Thu thập
+                                    chứng từ,
+                                    tài liệu chứng minh thiệt hại.</li>
+                                <li>Bước 4: Thống nhất phương án – Công ty
+                                    bảo hiểm
+                                    bồi thường thiệt hại cho nạn nhân nếu
+                                    có.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class=" collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                            <strong>Nếu không mang giấy chứng nhận bảo hiểm
+                                ô tô bắt
+                                buộc khi tham gia giao thông thì có làm sao
+                                không?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="collapse " data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <p>Khi tham gia giao thông, bạn phải luôn mang
+                                theo giấy
+                                chứng nhận bảo hiểm ô tô bắt buộc và xuất
+                                trình khi
+                                được yêu cầu. Bạn sẽ bị phạt với mức từ
+                                400,000 –
+                                600,000 đồng nếu không xuất trình được giấy
+                                chứng
+                                nhận bảo hiểm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                            <strong>Tôi có thể mua bảo hiểm ô tô bắt buộc
+                                cho người khác
+                                bằng cách nào?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseFive" class="collapse " data-bs-parent="#accordion">
+                        <div class="card-body">
+                            <p>Bạn có thể mua bảo hiểm xe ô tô bắt buộc cho
+                                người
+                                khác với thông tin xe của người đó
+                                Ví dụ: Khi mua cho anh Nguyễn Văn B, thì bạn
+                                sẽ nhập
+                                thông tin cá nhân và xe của anh Nguyễn Văn B
+                                ở phần
+                                "THÔNG TIN TRÊN ĐĂNG KÝ XE" trong màn hình
+                                nhập
+                                thông tin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quiz2 -->
+        <div class="tab-pane fade" id="pills-Quiz2" role="tabpanel" aria-labelledby="pills-Quiz2tab">
+            <div id="accordionOne">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseFive">
+                            <strong>Bảo hiểm vật chất ô tô tự nguyện là gì?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseFive" class="collapse  " data-bs-parent="#accordionOne">
+                        <div class="card-body">
+                            <p>Bảo hiểm vật chất ô tô hay còn gọi là bảo
+                                hiểm thân
+                                vỏ ô tô là loại hình hình bảo hiểm tự
+                                nguyện,
+                                không bắt buộc dành cho chủ xe khi tham gia
+                                giao
+                                thông.</p>
+                            <p>Mục đích của loại bảo hiểm tự nguyện ô tô này
+                                là đưa
+                                ra những phương án đền bù hợp lý và nhanh
+                                chóng đảm bảo quyền lợi cho chủ xe những
+                                thiệt hại
+                                vật chất xe xảy ra do những tai nạn bất ngờ,
+                                ngoài sự kiểm soát của chủ xe, lái xe trong
+                                các
+                                trường hợp: Đâm, va, hỏa hoạn, cháy nổ …</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+                            <strong>Tại sao nên mua bảo hiểm ô tô tự nguyện
+                                của chúng
+                                tôi ?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseSix" class="collapse" data-bs-parent="#accordionOne">
+                        <div class="card-body">
+                            <p>MoMo đã triển khai bảo hiểm TNDS ô tô tháng 6
+                                năm
+                                2021 (với đối tác PVI và các nhà bảo hiểm
+                                khác),
+                                và tiếp tục triển khai bảo hiểm vật chất ô
+                                tô tự
+                                nguyện, với mục tiêu đa dạng hóa lựa chọn về
+                                sản
+                                phẩm cho khách hàng. Thị trường bảo hiểm xe
+                                ô tô tại Việt
+                                Nam nhiều năm nay có các kênh phân phối
+                                chính
+                                là công ty bảo hiểm bán trực tiếp, hoặc
+                                thông qua
+                                đại lý là các gara xe, cửa hàng bán xe
+                                (dealer)
+                                và ngân hàng (qua luồng vay vốn), thời gian
+                                mua
+                                thường mất vài ngày tới một tuần cho cấp đơn
+                                bảo
+                                hiểm.Thẩm định cấp đơn bảo hiểm thường phức
+                                tạp
+                                hơn nữa đối với xe cũ.</p>
+                            <p>Mua bảo hiểm ô tô tự nguyện trên MoMo giúp
+                                rút ngắn
+                                thời gian và đơn giản hóa quy trình thẩm
+                                định
+                                và cấp đơn bảo hiểm cho khách hàng. Sau khi
+                                chọn
+                                chương trình bảo hiểm và chụp hình/tải Giấy
+                                chứng
+                                nhận bảo hiểm, khách hàng sẽ nhận được kết
+                                quả phê
+                                duyệt và nhận hợp đồng bảo hiểm chỉ trong
+                                vài phút.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+                            <strong>Tôi được quyền lợi gì khi mua bảo hiểm
+                                vật chất ô
+                                tô?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseSeven" class="collapse" data-bs-parent="#accordionOne">
+                        <div class="card-body">
+                            <p>Bồi thường cho chủ xe những thiệt hại vật
+                                chất xảy
+                                ra do những tai nạn bất ngờ,
+                                ngoài sự kiểm soát của chủ xe, lái xe trong
+                                các
+                                trường hợp sau:</p>
+                            <ul>
+                                <li>Đâm, va (bao gồm cả va chạm với vật thể
+                                    khác
+                                    ngoài xe cơ giới), lật, đổ, rơi, chìm,
+                                    bị các
+                                    vật thể khác rơi vào;</li>
+                                <li>Hỏa hoạn, cháy nổ;</li>
+                                <li>Những tai nạn bất khả kháng do thiên
+                                    nhiên (bao
+                                    gồm nhưng không giới hạn bão, lũ, lụt,
+                                    sét đánh,
+                                    giông tố, động đất, sụt lở, sóng
+                                    thần...);</li>
+                                <li>Mất toàn bộ xe do trộm, cướp;</li>
+                                <li>Hành vi ác ý, cố tình phá hoại (loại trừ
+                                    hành vi
+                                    ác ý, cố tình phá hoạt của Chủ xe, Đại
+                                    diện hợp
+                                    pháp của chủ xe, Người được bảo hiểm,
+                                    Lái xe).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau3 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseEight">
+                            <strong>Các quyền lợi bảo hiểm ô tô bổ sung mà
+                                tôi có thể
+                                tham gia là gì?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseEight" class="collapse  " data-bs-parent="#accordionOne">
+                        <div class="card-body">
+                            <p>Bạn có thể mua thêm các quyền lợi bảo hiểm
+                                sau khi
+                                tham gia vào chương trình bảo hiểm Thiệt hại
+                                vật
+                                chất xe ô tô:</p>
+                            <ul>
+                                <li>Bảo hiểm mất cắp bộ phận;</li>
+                                <li>Không tính khấu hao phụ tùng, vật tư
+                                    thay mới;</li>
+                                <li>Bảo hiểm lựa chọn cơ sở sửa chữa chính
+                                    hãng;</li>
+                                <li>Bảo hiểm thiệt hại động cơ do ảnh hưởng
+                                    của
+                                    nước.</li>
+                            </ul>
+                            <i> (*)Tùy thuộc vào tuổi xe tham gia bảo hiểm,
+                                các
+                                quyền lợi bổ sung có thể được chọn mua hoặc
+                                không.</i>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau4 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNine">
+                            <strong>Tôi có thể mua Bảo hiểm thiệt hại vật
+                                chất xe ô tô
+                                cho xe khác không phải thuộc quyền sở hữu
+                                của tôi được
+                                không?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseNine" class="collapse" data-bs-parent="#accordionOne">
+                        <div class="card-body">
+                            <p>Bạn hoàn toàn được phép mua bảo hiểm cho xe
+                                thuộc sở
+                                hữu của người khác.
+                                Khi xảy ra sự kiện bảo hiểm, chủ xe cần khai
+                                báo yêu
+                                cầu bồi thường và Công ty Bảo hiểm hiểm sẽ
+                                chi trả
+                                bồi thường tới chủ xe.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau5 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTen">
+                            <strong>Một số trường hợp chính không được bảo
+                                hiểm vật chất
+                                ô tô chi trả</strong>
+                        </a>
+                    </div>
+                    <div id="collapseTen" class="collapse" data-bs-parent="#accordionOne">
+                        <div class="card-body">
+                            <ul>
+                                <li>Hành động cố ý gây thiệt hại của Chủ xe
+                                    / Người
+                                    được bảo hiểm / Lái xe</li>
+                                <li>Tổn thất do hao mòn tự nhiên, hỏng hóc
+                                    do lỗi kỹ
+                                    thuật, thiệt hại gián tiếp như giảm giá
+                                    trị
+                                    thương mại</li>
+                                <li>Mất các bộ phận của xe trong mọi trường
+                                    hợp</li>
+                                <li>Vi phạm luật, quy định đường bộ, pháp
+                                    luật, ví
+                                    dụ chở quá trọng tải,
+                                    xe hoạt động không có đăng kiểm, chạy
+                                    quá tốc độ
+                                    cho phép,
+                                    lái xe không có bằng lái hợp lệ hoặc sử
+                                    dụng cồn
+                                    và/hoặc các chất kích thích…</li>
+                                <li>Những vụ tổn thất có số tiền thuộc trách
+                                    nhiệm
+                                    bảo hiểm bằng hoặc nhỏ hơn Mức khấu trừ.</li>
+                            </ul>
+                            <span>Thông tin chi tiết hơn, bạn vui lòng tham
+                                khảo Quy
+                                tắc bảo hiểm. </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau6 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapse1">
+                            <strong>Bảo hiểm vật chất ô tô (bảo hiểm ô tô tự
+                                nguyện) có
+                                thời hạn trong bao lâu?</strong>
+                        </a>
+                    </div>
+                    <div id="collapse1" class="collapse " data-bs-parent="#accordionOne">
+                        <div class="card-body">
+                            <strong>Thời hạn Bảo hiểm :</strong><span>01 năm
+                                kể từ
+                                ngày bắt đầu hiệu lực của đơn bảo hiểm.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau7 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse2">
+                            <strong>Hiệu lực bảo hiểm vật chất ô tô tự
+                                nguyện bắt đầu từ
+                                khi nào?</strong>
+                        </a>
+                    </div>
+                    <div id="collapse2" class="collapse" data-bs-parent="#accordionOne">
+                        <div class="card-body">
+                            <span>Hợp đồng bảo hiểm vật chất ô tô có hiệu
+                                lực theo
+                                thông tin ghi trên Giấy chứng nhận bảo hiểm
+                                và sau
+                                khi bạn đã thanh toán phí thành công và đầy
+                                đủ.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau8 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse3">
+                            <strong>Thủ tục yêu cầu quyền lợi bảo hiểm vật
+                                chất ô tô
+                                trong trường hợp xảy ra tai nạn?</strong>
+                        </a>
+                    </div>
+                    <div id="collapse3" class="collapse" data-bs-parent="#accordionOne">
+                        <div class="card-body">
+                            <ol>
+                                <li> Bảo vệ hiện trường và tiến hành các
+                                    biện pháp
+                                    khắc phục tổn thất có thể;</li>
+                                <li> Liên hệ tới số hotline giải quyết bồi
+                                    thường
+                                    của Công ty bảo hiểm được cung cấp trên
+                                    app
+                                    MoMo;</li>
+                                <li> Tiến hành chụp ảnh hiện trường, thu
+                                    thập hồ sơ,
+                                    chứng từ cần thiết;</li>
+                                <li>Gửi hồ sơ về công ty bảo hiểm theo thông
+                                    tin
+                                    được hướng dẫn qua hotline;</li>
+                                <li>Nhận kết quả giải quyết bồi thường dựa
+                                    trên hồ
+                                    sơ đã cung cấp.</li>
+                            </ol>
+                            <span>Đăng kí trực tiếp ở form</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau9 -->
+            </div>
+        </div>
+        <!-- Quiz chung -->
+        <div class="tab-pane fade" id="pills-Quiz3" role="tabpanel" aria-labelledby="pills-Quiz3tab">
+            <div id="accordionTwo">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                            <strong>Bên thứ 1,2,3 trong Hợp đồng bảo hiểm ô
+                                tô là gì?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse  " data-bs-parent="#accordionTwo">
+                        <div class="card-body">
+                            <strong>Định Nghĩa</strong>
+                            <ul>
+                                <li>Bên thứ nhất: Chủ xe (ví dụ: Chủ xe khi
+                                    tham gia
+                                    giao thông)</li>
+                                <li>Bên thứ hai: Công ty bảo hiểm (ví dụ:
+                                    Bảo hiểm
+                                    Bảo Việt)</li>
+                                <li>Bên thứ ba: Người khác với Bên thứ nhất
+                                    và thứ
+                                    hai nhưng liên quan đến sự cố thuộc
+                                    trách nhiệm
+                                    của Bên thứ nhất.
+                                    (ví dụ: Nạn nhân bị thiệt hại do chủ xe
+                                    gây ra)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                            <strong>Tài sản của tôi có được bảo hiểm không?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-bs-parent="#accordionTwo">
+                        <div class="card-body">
+                            <ul>
+                                <li>Tài sản của nạn nhân (bên thứ ba) mới
+                                    được bảo
+                                    hiểm. </li>
+                                <li>Tài sản (vd: xe ô tô) của chủ xe sẽ
+                                    không được
+                                    bảo hiểm theo quy định của BH TNDS ô tô
+                                    bắt buộc
+                                    này nếu có gây tai nạn cho bên thứ ba.
+                                </li>
+                                <li>Bạn có thể mua thêm bảo hiểm ô tô tự
+                                    nguyện để
+                                    được bảo vệ cho xe của mình.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                            <strong>Nếu bị thương khi gây ra tai nạn giao
+                                thông, tôi có
+                                được bảo hiểm?</strong>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-bs-parent="#accordionTwo">
+                        <div class="card-body">
+                            <strong>Định Nghĩa</strong>
+                            <ul>
+                                <li>Thương tật, tử vong của người thiệt hại
+                                    (bên thứ
+                                    ba/nạn nhân) mới được bảo hiểm. </li>
+                                <li>Thương tật của chủ xe gây tai nạn (bên
+                                    thứ nhất)
+                                    sẽ không được bảo hiểm theo quy định của
+                                    bảo
+                                    hiểm này. </li>
+                                <li>Bạn cần mua thêm bảo hiểm tai nạn người
+                                    ngồi
+                                    trên xe để đảm bảo quyền lợi cho mình.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- cau3 -->
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
